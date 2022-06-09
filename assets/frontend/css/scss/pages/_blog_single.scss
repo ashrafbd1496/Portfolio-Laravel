@@ -1,0 +1,111 @@
+/* ---------------------------------------------------------------- */
+/* 26.Blog Single                              
+/* ---------------------------------------------------------------- */
+.blog-single-inner {
+    img {
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
+    h4 {
+        margin-bottom: 20px;
+    }
+    .blog-meta {
+        margin-bottom: 20px;
+        span, i {
+            display: inline-block;
+        }
+        i {
+            color: $color_primary;
+            margin-right: 15px;
+        }
+        span {
+            &:first-child {
+                margin-right: 15px;
+            }
+        }
+    }
+    p {
+        margin-bottom: 35px;
+    }
+}
+.blog-small-img {
+    img {
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
+}
+.post-buttons {
+    margin-bottom: 30px;
+    .post-btn-prev {
+        display: flex;
+        img {
+            margin-right: 15px;
+            border-radius: 4px;
+        }
+        h6 {
+            margin-bottom: 20px;
+            a {
+                color: $color_black;
+                transition: all 0.25s ease;
+                &:hover {
+                    color: $color_primary;
+                }
+            }
+        }
+        .text {
+            .prev-post {
+                color: $color_black;
+                font-weight: 600;
+                transition: all 0.25s ease;
+                &:hover {
+                    color: $color_primary;
+                }
+                i {
+                    color: $color_primary;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .post-btn-next {
+        display: flex;
+        img {
+            margin-right: 15px;
+            border-radius: 4px;
+        }
+        h6 {
+            margin-bottom: 20px;
+            a {
+                color: $color_black;
+                transition: all 0.25s ease;
+                &:hover {
+                    color: $color_primary;
+                }
+            }
+        }
+        .text {
+            .next-post {
+                color: $color_black;
+                font-weight: 600;
+                transition: all 0.25s ease;
+                &:hover {
+                    color: $color_primary;
+                }
+                i {
+                    color: $color_primary;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query ( less than 768px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+    .post-buttons {
+        .post-btn-prev {
+            margin-bottom: 30px;
+        }
+    }
+}

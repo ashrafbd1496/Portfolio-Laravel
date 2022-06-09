@@ -1,0 +1,66 @@
+/* ---------------------------------------------------------------- */
+/* 04.Buttons                                                     
+/* ---------------------------------------------------------------- */
+.default-primary-btn {
+    padding: 18px 40px;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: all 0.25s ease;
+	text-align: center;
+	position: relative;
+	border-radius: 4px;
+    background: $color_primary;
+    color: $color_white;
+    border: none;
+	outline: none;
+    &:hover {
+        color: $color_white;
+		background: $color_dark;
+	}
+}
+.default-video-btn {
+	width: 60px;
+	height: 60px;
+	margin-left: 15px;
+	line-height: 60px;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: all 0.25s ease;
+	text-align: center;
+	position: relative;
+	border-radius: 4px;
+    background: $color_dark;
+    color: $color_white;
+    border: none;
+	outline: none;
+    &:hover {
+        color: $color_white;
+		background: $color_primary;
+	}
+}
+.scroll-top-btn {
+	bottom: 0;
+	opacity: 0;
+	right: 10px;
+	width: 54px;
+    height: 54px;
+    z-index: 1444;
+	line-height: 54px;
+	font-size: 16px;
+	border-radius: 4px;
+	text-align: center;
+	position: fixed;
+	visibility: hidden;
+	color: $color_white !important;
+	background: $color_primary;
+	transition: all 0.25s ease;
+	&:hover {
+        color: $color_white;
+        background: $color_dark;
+	}
+	&.active {
+		opacity: 1;
+		bottom: 10px;
+		visibility: visible;
+	}
+}

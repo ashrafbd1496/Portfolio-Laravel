@@ -1,0 +1,52 @@
+/* ---------------------------------------------------------------- */
+/* 12.My Resume                               
+/* ---------------------------------------------------------------- */
+.resume-item {
+    margin-bottom: 30px;
+    border-radius: 4px;
+    box-shadow: 0 23px 49px 0 $color_shadow;
+    .resume-header {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 30px 80px 30px 30px;
+        background: $color_white;
+        transition: all 0.5s ease;
+       .resume-toggle {
+            top: 0;
+            right: 0;
+            width: 70px;
+            height: 100%;
+            display: flex;
+            text-align: center;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            color: $color_white;
+            transition: all 0.5s ease;
+            background: $color_primary;
+        }
+        .resume-toggle[aria-expanded="true"] {
+            i:before {
+                content: "\f067";
+            }   
+        }
+    }
+    .resume-item-body {
+        padding: 30px;
+        background:  $color_white;
+        transition: all 0.5s ease;
+        border-top: 1px solid $color_grey;
+        border-radius: 4px;
+        h6 {
+            margin-bottom: 20px;
+            background: $color_primary;
+            display: inline-block;
+            padding: 7px 14px;
+            font-size: 14px;
+            font-weight: normal;
+            border-radius: 4px;
+            color: $color_white;
+        }
+   }
+}

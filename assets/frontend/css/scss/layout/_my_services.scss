@@ -1,0 +1,88 @@
+/* ---------------------------------------------------------------- */
+/* 15.My Services                   
+/* ---------------------------------------------------------------- */
+.tab-link-wrap {
+    .tab-link-item {
+        cursor: pointer;
+        text-align: center;
+        margin-bottom: 30px;
+        .tab-link-inner {
+            padding: 30px;
+            border-radius: 4px;
+            text-align: center;
+            background: $color_white;
+            transition: all 0.25s ease;
+            box-shadow: 0 23px 49px 0 $color_shadow;
+        }
+        span {
+            display: block;
+            margin-bottom: 20px;
+            &::before {
+                font-size: 60px;
+                color: $color_primary;
+                margin-left: 0;
+                line-height: 80px;
+            }
+        }
+        &.active, &:hover {
+            .tab-link-inner {
+                background: $color_primary;
+            }
+            span {
+                &::before {
+                    color: $color_white;
+                }
+            }
+            h5 {
+                color: $color_white;
+            }
+        }
+    }
+}
+.tab-content-item {
+    display: none;
+    &.active {
+        display: block;
+        animation: fadeInUp 0.25s ease;
+    }
+    img {
+        border-radius: 4px;
+    }
+}
+.tab-content-inner {
+    h4 {
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    ul {
+        margin-bottom: 51px;
+        li {
+            margin-top: 12px;
+            color: $color_black;
+            font-weight: 600;
+            &:first-child {
+                margin-top: 0;
+            }
+            &::before {
+               content: "\f00c";
+               padding-right: 9px;
+               color: $color_primary;
+               vertical-align: middle;
+               font: {
+                   family: "Font Awesome 5 Free";
+                   weight: 700;
+               }
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query Less Than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:992px) {
+    .services-tab-image {
+        margin-bottom: 30px;
+    }
+}

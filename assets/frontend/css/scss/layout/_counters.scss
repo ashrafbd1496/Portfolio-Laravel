@@ -1,0 +1,36 @@
+/* ---------------------------------------------------------------- */
+/* 14.Counters                       
+/* ---------------------------------------------------------------- */
+#counter {
+    background: $color_primary_light;
+}
+.counter-item {
+    text-align: center;
+    margin-bottom: 30px;
+    .icon {
+        padding: 30px;
+        border-radius: 4px 4px 0 0;
+        background: $color_primary;
+        span {
+            font-size: 60px;
+            color: $color_white;
+        }
+    }
+    .body {
+        padding: 30px;
+        border-radius: 0 0 4px 4px;
+        background: $color_white;
+        transition: all 0.25s ease;
+        box-shadow: 0 23px 49px 0 $color_shadow;
+        h5 {
+            margin-bottom: 5px;
+            color: $color_primary;
+            font-size: 18px;
+        }
+        span {
+            font-size: 40px;
+            font-weight: 800;
+            color: $color_dark;
+        }
+    }
+}

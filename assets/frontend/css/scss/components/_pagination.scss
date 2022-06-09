@@ -1,0 +1,25 @@
+/* ---------------------------------------------------------------- */
+/* 07.Pagination                              
+/* ---------------------------------------------------------------- */
+.pagination-wrap {
+    margin-top: 20px;
+    .pagination-link {
+        width: 50px;
+        height: 50px;
+        color: $color_black;
+        line-height: 50px;
+        margin: 0 5px 0 0;
+        text-align: center;
+        display: inline-block;
+        background: $color_white;
+        transition: all 0.5s ease;
+        box-shadow: 0 23px 49px 0 $color_shadow;
+        &:hover,&.active {
+            background: $color_primary;
+            color: $color_white !important;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

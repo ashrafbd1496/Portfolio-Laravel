@@ -1,0 +1,139 @@
+/* ---------------------------------------------------------------- */
+/* 22.Footer                             
+/* ---------------------------------------------------------------- */
+.footer {
+    background: $color_dark; 
+    .footer-top {
+        padding: 80px 0 50px 0;
+        .footer-widget {
+            margin-bottom: 30px;
+            .footer-desc {
+                color: $color_white;
+                opacity: 0.75;
+                margin-bottom: 20px;        
+            }
+            .footer-title {
+                color: $color_white;
+                margin-bottom: 30px;
+                position: relative;
+                font: {
+                    weight: 600;
+                }
+                &:after {
+                    content: "";
+                    display: block;
+                    background: $color_white;
+                    margin-top: 10px;
+                    width: 50px;
+                    height: 2px;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    width: 20px;
+                    height: 2px;
+                    background: $color_primary;
+                }
+            }
+            .footer-social-links {
+                a {
+                    width: 40px;
+                    height: 40px;
+                    color: $color_white;
+                    line-height: 40px;
+                    border-radius: 4px;
+                    text-align: center;
+                    display: inline-block;
+                    background: rgba($color_white, 0.05);
+                    transition: all 0.25s linear;
+                    margin-right: 10px;
+                    &:hover {
+                        background: $color_primary;
+                        color: $color_white;
+                    }
+                }
+            }
+            .footer-contact-info-list {
+                li {
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: flex-start;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    i {
+                        flex: 0 0 40px;
+                        margin-right: 15px;
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 4px;
+                        color: $color_white;
+                        line-height: 40px;
+                        text-align: center;
+                        display: inline-block;
+                        background: rgba($color_white, 0.05);
+                        transition: all 0.25s linear;
+                        font: {
+                            size: 14px;
+                        }
+                    }
+                    span {
+                        color: $color_white;
+                        opacity: 0.75;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .footer-links {
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    span {
+                        color: $color_white;
+                        opacity: 0.75;
+                    }
+                    a {
+                        color: $color_white;
+                        opacity: 0.8;
+                        &:hover {
+                            color: $color_white;
+                            opacity: 1;
+                            text-decoration: underline;
+                        }
+                    }
+                    &:before {
+                        content: "\f061";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 700;
+                        margin-right: 15px;
+                        display: inline-block;
+                        color: $color_white;
+                    }
+                }
+            }
+        }   
+    }
+    // Copyright
+    .copyright {
+        background: rgba($color_white, 0.01);
+        padding: 30px 0;
+        .copyright-text {
+            color: $color_white;
+            opacity: 0.75;
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Medium devices (tablets, less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (min-width:991.98px) {
+    .footer-desc {
+        padding-right: 30px;
+    }
+}

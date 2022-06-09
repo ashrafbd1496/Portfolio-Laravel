@@ -1,0 +1,74 @@
+/* ---------------------------------------------------------------- */
+/* 20.Blog                       
+/* ---------------------------------------------------------------- */
+.blog-item {
+    margin-bottom: 30px;
+    border-radius: 4px;
+    .blog-img {
+        overflow: hidden;
+        border-radius: 4px;
+        img {
+            border-radius: 4px;
+            transition: all 0.5s ease;
+        }
+        &:hover {
+            img {
+                transform: scale(1.15);
+            }
+        }
+    }
+    .blog-body {
+        padding: 30px;
+        box-shadow: 0 23px 49px 0 $color_shadow;
+        .blog-meta {
+            margin-bottom: 10px;
+            span {
+                i {
+                    margin-right: 10px;
+                    color: $color_primary;
+                }
+                &:first-child {
+                    margin-right: 15px;
+                }
+            }
+        }
+        .blog-text {
+            h5 {
+                margin-bottom: 20px;
+                a {
+                    color: $color_black;
+                    &:hover {
+                        color: $color_primary;
+                        transition: all 0.25s ease;
+                    }
+                }
+            }
+            p {
+                margin-bottom: 20px;
+            }
+            .blog-more-btn {
+                border: none;
+                outline: none;
+                color: $color_white;
+                font-size: 14px;
+                padding: 9px 20px;
+                text-align: center;
+                position: relative;
+                border-radius: 4px;
+                background: $color_primary;
+                display: inline-block;
+                text-transform: capitalize;
+                transition: all 0.25s ease;
+                &:hover {
+                    color: $color_white;
+                    background: $color_dark;
+                }
+            }
+        }
+    }
+}
+#blog-grid, #blog-sidebar {
+    .blog-item {
+        margin-bottom: 30px;
+    }
+}

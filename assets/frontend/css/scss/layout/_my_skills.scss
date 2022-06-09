@@ -1,0 +1,36 @@
+/* ---------------------------------------------------------------- */
+/* 13.My Skills                               
+/* ---------------------------------------------------------------- */
+.skills-progress-wrap {
+    .skills-item {
+        overflow: hidden;
+        padding: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        background: $color_white;
+        border-radius: 4px;
+        transition: all 0.25s linear;
+        box-shadow: 0 23px 49px 0 $color_shadow;
+        .skills-progress-bar {
+            height: 7px;
+            position: relative;
+            background: $color_dark;
+            margin-top: 10px;
+            overflow: hidden;
+            .skills-progress-value {
+                top: 0;
+                left: 0;
+                height: 100%;
+                position: absolute;
+                background: $color_primary;
+            }
+        }
+        .skills-item-text {
+            h6 {
+                .skill-percent {
+                    float: right;
+                }
+            }
+        }
+    }
+}

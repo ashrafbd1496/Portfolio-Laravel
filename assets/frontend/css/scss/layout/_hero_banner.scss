@@ -1,0 +1,85 @@
+/* ---------------------------------------------------------------- */
+/* 10.Hero Banner                                              
+/* ---------------------------------------------------------------- */
+.hero-banner {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .hero-inner {
+        .hero-social-links {
+            margin-bottom: 20px;
+            a {
+                width: 40px;
+                height: 40px;
+                color: $color_white;
+                line-height: 40px;
+                text-align: center;
+                display: inline-block;
+                background: $color_primary;
+                transition: all 0.25s linear;
+                margin-right: 10px;
+                border-radius: 4px;
+                &:hover {
+                    background: $color_dark;
+                    color: $color_white;
+                }
+            }
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 1.125rem;
+            margin-bottom: 30px;
+        }
+    }
+    .hero-image-wrap {
+        text-align: right;
+        .hero-image-inner {
+            text-align: right;
+            position: relative;
+            display: inline-block;
+            img {
+                border-radius: 4px;
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query Less Than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:992px) {
+    .hero-banner {
+        .hero-image-wrap {
+            display: none;
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query ( less than 768px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+    .hero-banner {
+        .hero-inner {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query (less than 576px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 576px) {
+    .hero-banner {
+        .hero-inner {
+            h1 {
+                font-size: 2.1rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+/* -------------------------------------------------------------------
+ * Template Name         : Caspar - Portfolio Template
+ * Theme Author Name     : Yucel Yilmaz
+ * Created Date          : 20 July 2020
+ * Version               : 1.0
+------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------
+   Base                               
+   ------------------------ /
+ * 01.Base
+ * 02.Typography
+ * 03.Helper Class
+   ------------------------ /
+   Components                               
+   ------------------------ /
+ * 04.Buttons  
+ * 05.Animations 
+ * 06.Form(Input, Comment)
+ * 07.Pagination 
+ * 08.Preloader
+   ------------------------ /
+   Layout                               
+   ------------------------ /
+ * 09.Header
+ * 10.Hero Banner 
+ * 11.About Me
+ * 12.My Resume  
+ * 13.My Skills 
+ * 14.Counters
+ * 15.My Services 
+ * 16.Portfolio (Gallery)
+ * 17.Clients 
+ * 18.Team
+ * 19.Banner
+ * 20.Blog
+ * 21.Contact
+ * 22.Footer
+ * 23.Breadcrumb
+ * 24.Sidebar  
+ * 25.RTL Mode
+   ------------------------ /
+   Pages                               
+   ------------------------ /
+ * 26.Blog Single
+ * 27.Intro Page    
+
+------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/* 01.Base                               
+/* ---------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+body, html {
+    font : {
+        size: 16px;
+        family: $font_text; 
+        weight: 400;
+    }
+    color: $color_light_text;
+    margin: 0;
+    padding: 0;
+}
+::selection {
+    background: $color_dark;
+    color: $color_white;
+}
+a:link, a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+textarea, textarea:focus, input, input:focus, button, button:focus {
+    outline: none;
+    resize: inherit;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+}
+@media screen and(min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query (less than 576px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:575.98px) {
+    body,html {
+        font-size: 14px;
+    }
+}

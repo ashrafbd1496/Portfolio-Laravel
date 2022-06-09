@@ -1,0 +1,41 @@
+/* ---------------------------------------------------------------- */
+/* 17.Clients                        
+/* ---------------------------------------------------------------- */
+.clients-item {
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    background: $color_white;
+    box-shadow: 0 23px 49px 0 $color_shadow;
+    .clients-img {
+        display: inline-block !important;
+        text-align: center;
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+    .clients-rating {
+        margin-bottom: 20px;
+        i {
+            color: $color_primary;
+        }
+    }
+    .clients-text {
+        margin-bottom: 20px;
+        p {
+            margin-bottom: 20px;
+        }
+        h5 {
+            margin-bottom: 7px;
+        }
+        span {
+            color: $color_primary;
+        }
+    }
+    .quote {
+        i {
+            color: $color_primary;
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+}

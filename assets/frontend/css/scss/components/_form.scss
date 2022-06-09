@@ -1,0 +1,282 @@
+/* ---------------------------------------------------------------- */
+/* 06.Form(Input, Comment)                             
+/* ---------------------------------------------------------------- */
+.custom-modal {
+    z-index: 99999999;
+    .modal-content {
+        background: transparent;
+        border: none;
+        .modal-header {
+            padding: 20px 30px;
+            background: $color_primary;
+            border-radius: 10px 10px 0 0;
+            .modal-title {
+                color: $color_white;
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+            button {
+                opacity: 1;
+                border:none;
+                background: transparent;
+                span {
+                    font-size: 25px;
+                    font-weight: 400;
+                    color: $color_white;
+                }
+            }    
+        }
+        .modal-body {
+            padding: 30px;
+            background: $color_white;
+            border-radius: 0 0 10px 10px;
+            .popup-form-group {
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 20px;
+                .popup-form-control {
+                    height: 60px;
+                    outline: none;
+                    width: 100%;
+                    border: 1px solid rgba($color_black, 0.1);
+                    border-radius: 10px;
+                    color: $color_black;
+                    background: $color_white;
+                    padding: 0 20px 0 60px;
+                    transition: all 0.25s ease;
+                    &:focus {
+                        outline: none;
+                        border-color: $color_primary;
+                    }
+                }
+                > span {
+                    top: 0;
+                    left: 0;
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    position: absolute;
+                    justify-content: center;
+                    color: $color_primary;
+                    font-size: 16px;
+                }  
+                textarea {
+                    height: auto !important;
+                    padding: 17px 20px 17px 60px !important;
+                }
+            }
+        }
+    }
+}
+#contactFormSuccessModal, #contactFormDangerModal {
+    .modal-header {
+        text-align: center;
+        padding: 20px;
+        border: 0;
+        h5, button {
+            color: $color_white;
+        }
+        &.danger  {
+            background: $color_danger;
+            color: $color_white;        
+        }
+        &.success {
+            background: $color_success;
+            color: $color_white;
+        }
+    }
+    .modal-body {
+        border-radius: 0;
+        .form-popup-inner {
+            text-align: center;
+            .form-icon {
+                margin-bottom: 30px;
+                svg {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    .path {
+                        stroke-dasharray: 1000;
+                        stroke-dashoffset: 0;
+                        &.circle {
+                            animation: dash 0.9s ease-in-out;
+                        }
+                        &.line {
+                            stroke-dashoffset: 1000;
+                            animation: dash 0.9s 0.35s ease-in-out forwards;
+                        }
+                        &.check {
+                            stroke-dashoffset: -100;
+                            animation: dashCheck 0.9s 0.35s ease-in-out forwards;
+                        }
+                    }
+                }
+                &.danger {
+                    svg {
+                        fill: $color_danger;
+                        stroke: $color_danger;
+                        background: rgba($color_danger, 0.1);
+                    }
+                }
+                &.success svg {
+                    fill: $color_success;
+                    stroke: $color_success;
+                    background: rgba($color_success, 0.1);
+                }
+            }
+        }
+    }
+    .modal-footer {
+        border-radius: 0 0 20px 20px;
+        background: $color_white;
+        padding: 20px;
+        justify-content: center;
+        .popup-link {
+            font-weight: 700;
+            color: $color_black;
+            &.success {
+                &:hover {
+                    color: $color_success;
+                    text-decoration: underline;
+                }
+            }
+            &.danger {
+                &:hover {
+                    color: $color_danger;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.contact-alerts .empty-form span, .contact-alerts .email-invalid span, 
+.contact-alerts .phone-invalid span, .contact-alerts .empty-select span,
+.contact-alerts .security-alert span {
+    display: block;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: $color_white;
+    background: $color_danger;
+}
+
+
+.custom-form-group .captcha-input {
+    padding-left: 90px !important;
+  }
+  
+.custom-form-group #contactFormCaptchaSpan {
+    position: absolute;
+    top: 0;
+    height: 60px;
+    display: block;
+    width: 70px;
+    line-height: 60px;
+    background: $color_primary;
+    color: $color_white;
+    font-weight: 500;
+    border-radius: 5px 0 0 5px;
+}
+body[style],header[style] {
+    padding-right:0 !important;
+}
+.modal-open {
+    overflow: auto;
+    padding-right:0 !important;
+}
+.custom-form-group {
+    position: relative;
+    .custom-select {
+        height: auto;
+    }
+    .custom-form-control {
+        width: 100%;
+        display: block;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: none;
+        padding: 17px 20px 17px 60px;
+        transition: all 0.25s ease;
+        border:1px solid rgba($color_black, 0.1);
+        &:focus {
+            border-color: $color_primary;
+        }
+    }
+    > span {
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        justify-content: center;
+        color: $color_primary;
+        font-size: 16px;
+    }  
+}
+.comment-block {
+    margin-bottom: 30px;
+    .comments-wrap {
+        .comments-item-wrap {
+            margin-bottom: 20px;
+            .comments-item {
+                display: flex;
+                align-items: flex-start;
+                .comment-header {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    justify-content: space-between;
+                    a {
+                        color: $color_black;
+                        text-transform: capitalize;
+                        display: inline-block;
+                        font-weight: 600;
+                        line-height: 1;
+                        transition: all 0.25s ease;
+                        i {
+                            margin-right: 10px;    
+                            color: $color_primary;                
+                        }
+                        &:hover {
+                            color: $color_primary;
+                        }
+                    }
+                }
+                img {
+                    margin-right: 15px;
+                    border-radius: 4px;
+                }
+                &.sub-comment {
+                    margin-top: 20px;
+                    margin-left: 120px;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query (less than 576px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 576px) {
+    .comment-block {
+        .comments-wrap {
+            .comments-item-wrap {
+                .comments-item {
+                    &.sub-comment {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
